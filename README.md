@@ -66,8 +66,8 @@ At this point, the user is redirected to the contacts page that contains:
 Clicking on each card redirects to a simple page   
 contaning contact information with a description.  
   
-The user can logout from the contacts page and can rout back to his contacts page from the information page.  
+The user can logout from his contacts page and can rout back to his contacts page from the information page.  
   
-  
+
 Thanks !  
 
