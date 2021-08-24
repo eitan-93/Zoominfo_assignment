@@ -6,12 +6,19 @@ Foobar is a Python library for dealing with word pluralization.
 
 The repository is divided into 2 folders, server and client:
 
-  *The client side is implemented using Angular
-  
-  
-```bash
-pip install foobar
-```
+*  The client side is implemented using Angular.
+*  For the server side, 
+   I've used Express as a framework for the server and Docker to define 2 containers :
+         *  Server, which listens on localhost:4200
+         *  Mongodb, which listens on localhost:27017.
+
+## Build & Run
+
+1. Client: 
+
+        ```bash
+ run:  pip install foobar
+        ```
 
 ## Usage
 
