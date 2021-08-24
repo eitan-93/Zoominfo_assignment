@@ -1,0 +1,28 @@
+<html> 
+<body>
+      <form action="/action_page.php">
+        <div class="imgcontainer">
+            <img src="https://wewantbgu.co.il/wp-content/uploads/2021/05/Zoominfo-1.png" 
+                 alt="Avatar" class="avatar">
+        </div>
+  
+        <div class="container">
+            
+            <label><b>Please enter username and password - You'll be redirected upon validation </b></label>  
+            <br>          
+            <br>          
+
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="username" (keyup)="onKeyUser($event)" required>
+  
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="password" (keyup)="onKeyPass($event)" required>
+            <div *ngIf="username.length === 0 || password.length === 0" >Please enter valid username & password.</div>
+            <button type="submit"  (click)="goToContacts()" >Login</button>
+        </div>
+
+
+    </form>
+</body>
+  
+</html>

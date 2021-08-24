@@ -1,0 +1,48 @@
+<div align-self="text-center" class="container text-center">
+        <button class="button" type="submit" (click)="goToLogin()" >Logout</button>
+        <div color="grey"  class="row"> 
+            <div class="container">
+                🔍
+                <input class="form-control" type="text" name="search" [(ngModel)]="searchContact" placeholder="Search Contacts">
+            </div>
+        </div>
+</div>
+
+
+
+<div >
+    <mat-paginator class="font-color" [length]="length"
+        [pageSize]="pageSize"
+        (page)="pageEvent = $event;handlePage($event)"
+        
+        [showFirstLastButtons]="true"
+        [pageIndex]="currentPage"
+        >
+    </mat-paginator>
+
+    <mat-selection-list role="list" [multiple]="false" >
+            <list-item role="listitem"
+                *ngFor="let contact of dataSource | filter: searchContact;"
+                [style.background]="transparent"
+                [colspan]="1"
+                [rowspan]="1"
+                class="list-item">
+                
+
+                <mat-card class="home-card" (click)=" chosenContact = contact ;goToInfo()">
+                    
+                        <mat-card-content class="home-card-content">
+                            <img mat-card-image [src]="contact.image">
+                            <div>
+                                <div><b>{{ contact.firstname }} {{ contact.lastname }}</b></div>
+                                <br>
+                                <div>{{ contact.email }}</div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+
+        </list-item>
+    </mat-selection-list>
+
+
+</div>

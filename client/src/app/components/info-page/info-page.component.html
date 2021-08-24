@@ -1,0 +1,26 @@
+
+<div align-self="text-center" class="container text-center">
+        <button class="button" type="submit" (click)="goBackToContacts()" >back</button>
+</div>
+
+<div>
+        <mat-card class="home-card">
+
+                <mat-card-content class="home-card-content"> 
+                    <img mat-card-image [src]="contactInfo.image">
+                    <div>
+                        <div><b>{{ contactInfo.firstname }} {{ contactInfo.lastname }}</b></div>
+                        <br>
+                        <div>{{ contactInfo.email }}</div>
+                    </div>
+                </mat-card-content>
+        </mat-card>
+
+        <mat-card class="home-card">         
+                <mat-card-content class="home-card-content"> 
+                    <div>
+                        <div>{{ contactInfo.about === "" ? "Nothing to say" : contactInfo.about}}</div>
+                    </div>
+                </mat-card-content>
+        </mat-card>
+</div>  

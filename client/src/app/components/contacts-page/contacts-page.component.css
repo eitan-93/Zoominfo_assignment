@@ -1,0 +1,133 @@
+:host {
+    display: block;
+    padding: 16px;
+}
+
+body {
+    height: 80%;
+	width:40%;
+    background: #efefef;
+    text-align: right;
+	display:inline-flex;
+	justify-content:flex-start;
+    flex-direction : column;
+  }
+  
+  .list-item {
+    display:flex;
+    justify-content:normal;
+    background: #fff;
+    box-shadow: 0 1px 2px #999;
+    height: 20% !important;;
+    line-height: 10%px;
+    margin: 1% auto;
+    padding: 10px 10px;
+    text-align: center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-transition: box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+    width: 100%;
+  }
+  .list-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+/* .search {
+    margin-bottom: 15%;
+
+} */
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.home-card {
+    flex: 3;
+    border-radius: 4px;
+    max-width: 100%;
+    max-height: 5%;
+    margin-top: 0%;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.home-card .mat-card-image {
+    object-fit: cover;
+    height: 40%;
+    width: 2%;
+    margin: 0;
+    padding: 0;
+}
+.home-card .home-card-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+}
+.home-card .home-card-content > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    max-width: 100%;
+    font-size : 100%;
+    
+}
+.home-card .home-card-content > *:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    max-width: 100%;
+}
+.home-card .home-card-content > *:last-child {
+    flex-direction: column;
+    align-items: start;
+    padding: 3%;
+    max-width: 100%;
+}
+
+
+
+
+
+.form-control {
+    margin: 900;
+    padding-bottom: 1200;
+    background-color: white;
+    border-color: black;
+    color: grey;
+    font-size : 100%;
+    border-style: solid;
+  }
+.container{  
+    display:table-row;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    color: black;
+    border: 2px solid transparent;
+    margin-left: 0%;
+    font-size : 100%;
+
+}
+
+button {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    padding-top: 5%;
+    margin: 10%;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+.font-color {                                                                                   
+    color: black;
+    font-size : 100%;
+  }
+  
