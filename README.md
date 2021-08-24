@@ -31,12 +31,11 @@ The repository is divided into 2 folders, server and client:
 
 ## Usage
 
-After building, the server initializes the Mongo database with a json Object containing a list of users - using mongoose.
-
+After building, the server initializes the Mongo database with a json Object containing a list of users - using mongoose.  
 As mentioned, you can interact with the frontend on localhost:4200 and see backend responses on localhost:3080.
 
-Each object (user) is of the following structure : 
-
+Each object (user) is of the following structure :  
+  
    username : String,  
    password : String,  
    logged : Boolean,  
