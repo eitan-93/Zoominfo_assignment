@@ -16,9 +16,9 @@ The repository is divided into 2 folders, server and client:
 
 1. Client: 
 
-        ```bash
- run:  pip install foobar
-        ```
+   ```bash
+   pip install foobar
+   ```
 
 ## Usage
 
