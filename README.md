@@ -36,40 +36,40 @@ As mentioned, you can interact with the frontend on localhost:4200 and see backe
 
 Each object (user) is of the following structure :  
   
-   username : String,  
-   password : String,  
-   logged : Boolean,  
-   firstname : String,  
-   lastname : String,  
-   email : String,  
-   contacts : [Object]  
+      username : String,  
+      password : String,  
+      logged : Boolean,  
+      firstname : String,  
+      lastname : String,  
+      email : String,  
+      contacts : [Object]  
    
 On the client side, the user submits his username and password. 
 
-For example the users :
+For example the users :  
    
-   username: corey
-   password: 123
+   username: corey  
+   password: 123  
+     
+   username: Queen  
+   password: 123  
    
-   username: Queen
-   password: 123
-   
-The server returns the user's id with which the user sends a request to
-recieve his full information. This is ment to simulate an example of 2fa authentication with a token.
+The server returns the user's id with which the user sends a request to  
+recieve his full information. This is ment to simulate an example of 2fa authentication with a token.  
 
-At this point, the user is redirected to the contacts page that contains:
+At this point, the user is redirected to the contacts page that contains:  
 
-*  A list of cards with basic contact information sorted by the firstname.
-*  A serach bar.
-*  Pagination.
+*  A list of cards with basic contact information sorted by the firstname.  
+*  A serach bar.  
+*  Pagination.  
+  
+The user can logout from the contacts page.  
 
-The user can logout from the contacts page.
-
-Clicking on each card redirects to a simple page 
-contaning contact information with a description.
-
-The user can rout back to his contacts page.
-
-
-Thanks !
+Clicking on each card redirects to a simple page   
+contaning contact information with a description.  
+  
+The user can rout back to his contacts page.  
+  
+  
+Thanks !  
 
